@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison la Craquante - Boulangerie Pâtisserie Montgeron</title>
+    <meta name="description"
+        content="Découvrez Maison la Craquante, une boulangerie de luxe offrant des pains artisanaux, des viennoiseries exquises et des gâteaux sur mesure pour vos événements.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="assets/logo.png" alt="Maison La Craquante Logo">
+                <div class="logo-text">
+                    <img src="assets/header_text_new.png" alt="Maison La Craquante" class="brand-name-img">
+                    <span class="brand-subtitle">Artisan Pâtissier</span>
+                </div>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#specialties">Nos Créations</a></li>
+                <li><a href="#about">Notre Histoire</a></li>
+                <li><a href="#reservation" class="btn-reserve">Commander</a></li>
+                <li>
+                    <a href="https://www.facebook.com/Maisonlacraquante" target="_blank" aria-label="Facebook"
+                        class="social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/maisonlacraquantemontgeron?igsh=MWs3Znh5NzY4ZWI0MA=="
+                        target="_blank" aria-label="Instagram" class="social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-content fade-in">
+            <h1>L'Excellence à la Française</h1>
+            <p>Une symphonie de saveurs et de textures, pétrie avec passion.</p>
+            <a href="#specialties" class="btn-primary">Découvrir nos produits</a>
+        </div>
+    </header>
+
+    <!-- Specialties Section -->
+    <section id="specialties" class="section specialties">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Nos Signatures</h2>
+                <p class="subtitle">L'art de la gourmandise</p>
+            </div>
+            <div class="product-slider">
+                <div class="product-track">
+                    <!-- Existing Products -->
+                    <div class="product-slide">
+                        <div class="product-card">
+                            <div class="card-image">
+                                <img src="assets/croissant.jpg" alt="Croissant au Beurre">
+                            </div>
+                            <div class="card-content">
+                                <h3>Le Croissant d'Or</h3>
+                                <p>Feuilletage aérien, beurre AOP des Charentes. Un réveil en douceur.</p>
+                                <span class="price">2.50€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-slide">
+                        <div class="product-card">
+                            <div class="card-image">
+                                <img src="assets/bread.jpg" alt="Pain de Campagne">
+                            </div>
+                            <div class="card-content">
+                                <h3>Pain de Campagne</h3>
+                                <p>Levain naturel, farine de meule bio. Une croûte craquante, une mie alvéolée.</p>
+                                <span class="price">4.00€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-slide">
+                        <div class="product-card">
+                            <div class="card-image">
+                                <img src="assets/tart.jpg" alt="Tarte aux Fruits">
+                            </div>
+                            <div class="card-content">
+                                <h3>Tarte Signature</h3>
+                                <p>Fruits de saison, crème légère à la vanille de Madagascar, pâte sablée fine.</p>
+                                <span class="price">5.50€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- New Products -->
+                    <div class="product-slide">
+                        <div class="product-card">
+                            <div class="card-image">
+                                <img src="assets/fraisier.jpg" alt="Le Fraisier">
+                            </div>
+                            <div class="card-content">
+                                <h3>Le Fraisier</h3>
+                                <p>Génoise moelleuse, crème mousseline légère et fraises fraîches de saison.</p>
+                                <span class="price">6.50€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-slide">
+                        <div class="product-card">
+                            <div class="card-image">
+                                <img src="assets/gateau_cerises.jpg" alt="Gâteau Cerises">
+                            </div>
+                            <div class="card-content">
+                                <h3>Gâteau Cerises</h3>
+                                <p>Un délice fruité avec des cerises griottes et une mousse onctueuse.</p>
+                                <span class="price">6.00€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-slide">
+                        <div class="product-card">
+                            <div class="card-image">
+                                <img src="assets/boule_chocolat.jpg" alt="Boule Chocolat">
+                            </div>
+                            <div class="card-content">
+                                <h3>Boule Chocolat</h3>
+                                <p>Sphère croquante au chocolat noir, cœur fondant praliné.</p>
+                                <span class="price">5.00€</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section page-histoire-maison-la-craquante">
+        <div class="container">
+            <h1>Maison La Craquante – Boulangerie & Pâtisserie artisanale à Montgeron</h1>
+
+            <div class="about-content-wrapper">
+                <div class="about-text">
+                    <p><strong>Maison La Craquante</strong> est une boulangerie-pâtisserie artisanale située à
+                        Montgeron, créée
+                        en 2020 avec une ambition claire : proposer du <strong>100 % fait maison</strong>, dans le
+                        respect des
+                        traditions boulangères et pâtissières françaises.</p>
+
+                    <h2>Une maison artisanale née à Montgeron</h2>
+
+                    <p>Installée au <strong>71 avenue de la République à Montgeron</strong>, Maison La Craquante reprend
+                        en 2020
+                        le fonds de commerce d’une ancienne boulangerie du quartier pour le transformer en une maison
+                        dédiée à
+                        l’artisanat et à la gourmandise.</p>
+
+                    <p>Depuis son ouverture, la boulangerie propose une offre complète :</p>
+
+                    <ul>
+                        <li>Pains traditionnels et pains spéciaux</li>
+                        <li>Viennoiseries pur beurre</li>
+                        <li>Pâtisseries artisanales et entremets</li>
+                        <li>Confiseries et glaces</li>
+                        <li>Sandwicherie et offre traiteur</li>
+                        <li>Salon de thé</li>
+                    </ul>
+
+                    <h2>La création de Maison La Craquante</h2>
+
+                    <p>La société <strong>LA CRAQUANTE</strong> est immatriculée en septembre 2020 sous forme de SARL.
+                        Le projet
+                        est de moderniser une boulangerie locale pour en faire une maison de référence en boulangerie et
+                        pâtisserie fine à Montgeron.</p>
+
+                    <h2>Le fondateur : Bryan Alidina</h2>
+
+                    <p>Maison La Craquante est dirigée par <strong>Bryan Alidina</strong>, artisan boulanger né en 1996.
+                        Passionné par son métier, il développe une vision moderne de l’artisanat, alliant tradition et
+                        créativité.</p>
+
+                    <p>Autour de lui, une équipe complète (boulangers, pâtissiers, vendeurs) œuvre chaque jour pour
+                        proposer des
+                        produits d’exception et un accueil chaleureux.</p>
+
+                    <h2>Un savoir-faire 100 % fait maison</h2>
+
+                    <p>Tous les produits de Maison La Craquante sont fabriqués sur place :</p>
+
+                    <ul>
+                        <li>Pain artisanal</li>
+                        <li>Viennoiseries maison</li>
+                        <li>Pâtisserie fine moderne</li>
+                        <li>Créations saisonnières</li>
+                    </ul>
+
+                    <p>Chaque création repose sur des matières premières sélectionnées avec soin et une production
+                        quotidienne
+                        dans les ateliers de Montgeron.</p>
+
+                    <h2>Une reconnaissance nationale</h2>
+
+                    <p>Maison La Craquante a participé à l’émission <strong>« La Meilleure Boulangerie de France » sur
+                            M6</strong>, une étape importante dans son histoire qui a contribué à faire rayonner son
+                        savoir-faire bien au-delà de Montgeron.</p>
+                </div>
+                <div class="about-image">
+                    <img src="assets/illustration_boulangerie.jpg" alt="Illustration Maison La Craquante" class="mb-4">
+                    <img src="assets/meilleure_boulangerie_top6.jpg"
+                        alt="Maison La Craquante à La Meilleure Boulangerie de France">
+                    <p class="image-caption">Top 6 de La Meilleure Boulangerie de France</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards" class="section awards">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Nos Prix</h2>
+                <p class="subtitle">L'excellence récompensée</p>
+            </div>
+            <div class="awards-grid">
+                <div class="award-card fade-in">
+                    <img src="assets/award_2025_pain_bio.jpg" alt="3e prix Meilleur Pain de Campagne Bio IDF 2025">
+                    <div class="award-info">
+                        <h3>2025</h3>
+                        <p>3e prix Meilleur Pain de Campagne Bio d'Île-de-France</p>
+                    </div>
+                </div>
+                <div class="award-card fade-in">
+                    <img src="assets/award_2024_croissant_regional.jpg"
+                        alt="Finaliste Concours Régional Croissant au Beurre 2024">
+                    <div class="award-info">
+                        <h3>2024</h3>
+                        <p>Finaliste Concours Régional du Meilleur Croissant au Beurre d'Île-de-France</p>
+                    </div>
+                </div>
+                <div class="award-card fade-in">
+                    <img src="assets/award_2023_galette.jpg"
+                        alt="4e prix Meilleure Galette aux Amandes de l'Essonne 2023">
+                    <div class="award-info">
+                        <h3>2023</h3>
+                        <p>4e prix Meilleure Galette aux Amandes de l'Essonne</p>
+                    </div>
+                </div>
+                <div class="award-card fade-in">
+                    <img src="assets/award_2022_croissant.jpg"
+                        alt="6e prix Meilleur Croissant au Beurre de l'Essonne 2022">
+                    <div class="award-info">
+                        <h3>2022</h3>
+                        <p>6e prix Meilleur Croissant au Beurre de l'Essonne</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video-showcase" class="section video-showcase">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>L'Art en Mouvement</h2>
+                <p class="subtitle">Découvrez notre savoir-faire</p>
+            </div>
+            <div class="video-container fade-in">
+                <iframe src="https://www.instagram.com/reel/DQq9r2_jBkm/embed" width="267" height="476" frameborder="0"
+                    scrolling="no" allowtransparency="true" allowfullscreen="true"></iframe>
+                <iframe src="https://www.instagram.com/reel/DRMULMbjHd1/embed" width="267" height="476" frameborder="0"
+                    scrolling="no" allowtransparency="true" allowfullscreen="true"></iframe>
+                <iframe src="https://www.instagram.com/reel/DQ3y3hlDGZD/embed" width="267" height="476" frameborder="0"
+                    scrolling="no" allowtransparency="true" allowfullscreen="true"></iframe>
+                <iframe src="https://www.instagram.com/reel/DDd5fEOxBAL/embed" width="267" height="476" frameborder="0"
+                    scrolling="no" allowtransparency="true" allowfullscreen="true"></iframe>
+                <iframe src="https://www.instagram.com/reel/C_fT2RFuUhi/embed" width="267" height="476" frameborder="0"
+                    scrolling="no" allowtransparency="true" allowfullscreen="true"></iframe>
+                <iframe src="https://www.instagram.com/reel/C0ZSOhaI0Y5/embed" width="267" height="476" frameborder="0"
+                    scrolling="no" allowtransparency="true" allowfullscreen="true"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section testimonials">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Ils nous font confiance</h2>
+                <p class="subtitle">Vos avis comptent pour nous</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-track">
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="stars">★★★★★</div>
+                            <p class="review-text">"Les meilleurs croissants de Montgeron ! Toujours frais et
+                                croustillants. Un vrai plaisir le dimanche matin."</p>
+                            <p class="author">- Sophie M.</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="stars">★★★★★</div>
+                            <p class="review-text">"J'ai commandé mon gâteau de mariage ici, c'était aussi beau que bon.
+                                Merci à toute l'équipe pour ce moment magique !"</p>
+                            <p class="author">- Thomas & Léa</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="stars">★★★★★</div>
+                            <p class="review-text">"Une boulangerie authentique avec un accueil chaleureux. Le pain au
+                                levain est incroyable, je recommande vivement."</p>
+                            <p class="author">- Marc D.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="section reservation">
+        <div class="container reservation-container">
+            <div class="reservation-form-wrapper fade-in">
+                <h2>Événements & Célébrations</h2>
+                <p>Mariages, anniversaires, réceptions... Confiez-nous la création de vos pièces montées et gâteaux
+                    d'exception.</p>
+
+                <form id="booking-form" class="booking-form">
+                    <div class="form-group">
+                        <label for="name">Nom complet</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="event-type">Type d'événement</label>
+                        <select id="event-type" name="event-type">
+                            <option value="anniversaire">Anniversaire</option>
+                            <option value="mariage">Mariage</option>
+                            <option value="entreprise">Événement d'entreprise</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date de l'événement</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Détails de la commande</label>
+                        <textarea id="message" name="message" rows="4"
+                            placeholder="Parlez-nous de vos envies..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Demander un devis</button>
+                </form>
+            </div>
+            <div class="reservation-map fade-in">
+                <h2>Où nous trouver !</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5266.425614757124!2d2.449193249853399!3d48.70141333524498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e60b7d1bcd0567%3A0xe22c9c8004625bc9!2sLa%20Craquante%20Montgeron!5e0!3m2!1sfr!2sfr!4v1764346269093!5m2!1sfr!2sfr"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <div class="footer-brand">
+                    <img src="assets/logo_text_footer_final.png" alt="Maison La Craquante" class="footer-logo-img">
+                    <span class="footer-subtitle">Artisan Pâtissier</span>
+                </div>
+                <p>Boulangerie Pâtisserie 100% fait maison.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Horaires</h4>
+                <p>Lundi - Samedi</p>
+                <p>06:00 - 20:00</p>
+                <p>Dimanche</p>
+                <p>07:00 - 13:30</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <p>71 Avenue de la République, 91230 Montgeron</p>
+                        <p>01 75 30 87 05</p>
+                        <p>Ste.lacraquante@gmail.com</p>
+                    </div>
+                    <img src="assets/ab_logo.png" alt="Agriculture Biologique" class="ab-logo">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Maison La Craquante. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

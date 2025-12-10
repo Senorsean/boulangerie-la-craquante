@@ -1,0 +1,816 @@
+/* Variables & Reset */
+:root {
+    --color-gold: #D4AF37;
+    --color-gold-light: #F3E5AB;
+    --color-black: #1A1A1A;
+    --color-dark-grey: #333333;
+    --color-cream: #FAF9F6;
+    --color-white: #FFFFFF;
+
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Lato', sans-serif;
+
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-cream);
+    color: var(--color-dark-grey);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--font-heading);
+    color: var(--color-black);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Buttons */
+.btn-primary {
+    display: inline-block;
+    background-color: var(--color-gold);
+    color: var(--color-white);
+    padding: 12px 30px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-black);
+    color: var(--color-gold);
+}
+
+.btn-reserve {
+    border: 1px solid var(--color-gold);
+    padding: 8px 20px;
+    color: var(--color-gold);
+    border-radius: 2px;
+}
+
+.btn-reserve:hover {
+    background-color: var(--color-gold);
+    color: var(--color-white);
+}
+
+/* Navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+}
+
+.logo>img {
+    width: 80px;
+    /* Slightly smaller to fit with text */
+    height: auto;
+    display: block;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-name {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-black);
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+.brand-name-img {
+    height: auto;
+    width: 160px;
+    max-width: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.brand-subtitle {
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    color: var(--color-gold);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a {
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-dark-grey);
+}
+
+.nav-links a:hover {
+    color: var(--color-gold);
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    color: var(--color-black);
+    transition: var(--transition);
+}
+
+.social-link:hover {
+    color: #1877F2;
+    /* Facebook Blue */
+    transform: scale(1.1);
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.mobile-menu-btn .bar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: var(--color-black);
+    margin: 5px 0;
+    transition: var(--transition);
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/hero_banner_final.png');
+    background-size: cover, cover;
+    background-position: center top, center 140px;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.hero-content {
+    margin-top: 500px;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    color: var(--color-white);
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Sections General */
+.section {
+    padding: 80px 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.section-header .subtitle {
+    font-family: var(--font-body);
+    color: var(--color-gold);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+}
+
+/* Specialties Slider */
+.specialties {
+    overflow: hidden;
+}
+
+.product-slider {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.product-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.product-slide {
+    min-width: 33.333%;
+    /* Show 3 items on desktop */
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.product-card {
+    background: var(--color-white);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+    height: 250px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover .card-image img {
+    transform: scale(1.1);
+}
+
+.card-content {
+    padding: 25px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.card-content .price {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    color: var(--color-gold);
+    font-weight: 700;
+}
+
+.product-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+/* About Section */
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.about-image img {
+    border-radius: 4px;
+    box-shadow: 20px 20px 0 var(--color-gold-light);
+}
+
+/* Awards Section */
+.awards {
+    background-color: var(--color-cream);
+}
+
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.award-card {
+    background-color: var(--color-white);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+    text-align: center;
+}
+
+.award-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.award-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 3px solid var(--color-gold);
+}
+
+.award-info {
+    padding: 20px;
+}
+
+.award-info h3 {
+    color: var(--color-gold);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.award-info p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* Video Section */
+.video-showcase {
+    background-color: var(--color-white);
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.video-container iframe {
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonials Section (Slider) */
+.testimonials {
+    background-color: var(--color-cream);
+    overflow: hidden;
+    /* Hide overflow for slider */
+}
+
+.testimonial-slider {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.testimonial-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.testimonial-slide {
+    min-width: 100%;
+    padding: 20px;
+}
+
+.testimonial-card {
+    background-color: var(--color-white);
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+
+.testimonial-card .stars {
+    color: var(--color-gold);
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.testimonial-card .review-text {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.testimonial-card .author {
+    font-weight: 700;
+    font-family: var(--font-heading);
+    color: var(--color-black);
+    font-size: 1.1rem;
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.dot.active {
+    background-color: var(--color-gold);
+    transform: scale(1.2);
+}
+
+/* Reservation Section */
+.reservation {
+    background-color: var(--color-white);
+}
+
+.reservation-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.reservation-map {
+    height: 100%;
+    min-height: 400px;
+    padding: 60px;
+    background-color: var(--color-cream);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.reservation-map h2 {
+    margin-bottom: 15px;
+}
+
+.reservation-map iframe {
+    width: 100%;
+    flex-grow: 1;
+    object-fit: cover;
+}
+
+.reservation-form-wrapper {
+    padding: 60px;
+    background-color: var(--color-cream);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+.reservation-form-wrapper h2 {
+    margin-bottom: 15px;
+}
+
+.booking-form {
+    margin-top: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    background-color: var(--color-white);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-gold);
+    background-color: var(--color-white);
+}
+
+.btn-submit {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: var(--transition);
+    width: 100%;
+}
+
+.btn-submit:hover {
+    background-color: var(--color-gold);
+}
+
+/* Footer */
+.footer {
+    background-color: #000000;
+    color: var(--color-white);
+    padding: 60px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-col h3 {
+    color: var(--color-gold);
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.footer-logo-img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-subtitle {
+    display: block;
+    color: var(--color-white);
+    font-family: var(--font-body);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.footer-col h4 {
+    color: var(--color-white);
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.footer-col p {
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        background-attachment: scroll;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: var(--color-white);
+        flex-direction: column;
+        justify-content: center;
+        transition: 0.4s;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-container,
+    .reservation-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image {
+        order: -1;
+    }
+
+    .reservation-map {
+        height: 300px;
+    }
+
+    .reservation-form-wrapper {
+        padding: 40px 20px;
+    }
+
+    /* Slider Responsive */
+    .product-slide {
+        min-width: 100%;
+        /* Show 1 item on mobile */
+    }
+}
+
+/* Contact Wrapper for AB Logo */
+.contact-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.ab-logo {
+    width: 60px;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Page Histoire Styles */
+.page-histoire-maison-la-craquante h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.page-histoire-maison-la-craquante h2 {
+    font-size: 1.8rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: var(--color-gold);
+}
+
+.page-histoire-maison-la-craquante p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.page-histoire-maison-la-craquante ul {
+    list-style: disc;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.page-histoire-maison-la-craquante li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.about-content-wrapper {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.about-text {
+    flex: 3;
+}
+
+.about-image {
+    flex: 2;
+    position: sticky;
+    top: 100px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 20px 20px 0 var(--color-gold-light);
+}
+
+.image-caption {
+    text-align: center;
+    margin-top: 15px;
+    font-style: italic;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .about-content-wrapper {
+        flex-direction: column;
+    }
+
+    .about-image {
+        margin-top: 40px;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+.mb-4 {
+    margin-bottom: 20px;
+}
