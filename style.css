@@ -687,6 +687,11 @@ img {
         background-attachment: scroll;
     }
 
+    .hero-logo {
+        width: 100px;
+        /* Smaller logo on mobile */
+    }
+
     .nav-links {
         position: fixed;
         top: 70px;
