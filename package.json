@@ -4,7 +4,7 @@
   "description": "Site vitrine pour la Boulangerie La Craquante",
   "main": "index.html",
   "scripts": {
-    "build": "echo 'Building static site...' && exit 0"
+    "build": "rm -rf dist && mkdir dist && cp index.html style.css script.js dist/ && cp -r assets dist/"
   },
   "keywords": [],
   "author": "",
