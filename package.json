@@ -1,0 +1,12 @@
+{
+  "name": "boulangerie-la-craquante",
+  "version": "1.0.0",
+  "description": "Site vitrine pour la Boulangerie La Craquante",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'Building static site...' && exit 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
